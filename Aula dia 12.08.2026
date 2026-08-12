@@ -1,0 +1,465 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO365q6OFPia75nnAUvPXzZ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mmanuss/PA-1C-grupo-A/blob/main/Aula%20dia%2012.08.2026\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "sA6seXfieaEh"
+      },
+      "outputs": [],
+      "source": [
+        "#EXERCÍCIO 1\n",
+        "\n",
+        "#crie uma lista contendo o nome de 5 alunos\n",
+        "\n",
+        "# mostre a lista completa\n",
+        "# mostre o primeiro nome\n",
+        "# mostre o último nome\n",
+        "# mostre a quantidade de alunos"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nomes = [\"carla\", \"marcos\", \"ruan\", \"larissa\", \"maitê\" ]"
+      ],
+      "metadata": {
+        "id": "mwQOoOz6okCd"
+      },
+      "execution_count": 11,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import builtins\n",
+        "builtins.print(nomes)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IL45WOGKo5cj",
+        "outputId": "8c62ac93-6afa-43a8-df33-06f5624ce440"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['carla', 'marcos', 'ruan', 'larissa', 'maitê']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import builtins\n",
+        "builtins.print(nomes[0])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YiomvogPpP37",
+        "outputId": "b81b6c4a-0b42-4b5e-ac8b-d9ac8455aa94"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "carla\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import builtins\n",
+        "builtins.print(nomes[4])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Fvvg1DBwpoDW",
+        "outputId": "712220e1-5bf0-41eb-bc30-71e7fdc9cb02"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "maitê\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import builtins\n",
+        "builtins.print(\"5 alunos\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EiYbYZs0p3_t",
+        "outputId": "768b1a3c-a516-45b8-96e3-d8158467c571"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5 alunos\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#EXERCÍCIO 2\n",
+        "\n",
+        "# crie uma lista vazia chama frutas\n",
+        "# utilizando append(), adicione 5 frutas informadas pelo usuário\n",
+        "# ao final exiba a lista completa"
+      ],
+      "metadata": {
+        "id": "1NeavELVjZf6"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import builtins\n",
+        "\n",
+        "lista_frutas = []\n",
+        "for i in range (5):\n",
+        "   frutas = input(f\" digite 1 fruta \")\n",
+        "   lista_frutas.append(frutas)\n",
+        "\n",
+        "builtins.print(lista_frutas)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UtmpdmmxqFNU",
+        "outputId": "c257529a-0337-4ee5-8b0f-7cf3eb1bc77c"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " digite 1 fruta maça\n",
+            " digite 1 fruta banana\n",
+            " digite 1 fruta figo\n",
+            " digite 1 fruta melão\n",
+            " digite 1 fruta uva\n",
+            "['maça', 'banana', 'figo', 'melão', 'uva']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#EXERCÍCIO 3\n",
+        "\n",
+        "# considere a lista\n",
+        "\n",
+        "numeros = [10, 25, 8, 42, 15, 30 7]\n",
+        "\n",
+        "# utilizando for, mostre cada número da lista\n",
+        "# mostre os números maiores que 20"
+      ],
+      "metadata": {
+        "id": "VK0Yk6m1j1rS"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numeros = [10, 25, 8, 42, 15, 30, 7]"
+      ],
+      "metadata": {
+        "id": "4RAQ0TGMvFeW"
+      },
+      "execution_count": 58,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import builtins\n",
+        "builtins.print(numeros)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Up9eLd_Yvh0l",
+        "outputId": "b6bff8c4-594b-4f4d-9ba8-d60fdb0b0b74"
+      },
+      "execution_count": 59,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[10, 25, 8, 42, 15, 30, 7]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import builtins\n",
+        "\n",
+        "builtins.print(\"Todos os números na lista:\")\n",
+        "for num in numeros:\n",
+        "    builtins.print(num)\n",
+        "\n",
+        "builtins.print(\"Números maiores que 20:\")\n",
+        "for num in numeros:\n",
+        "    if num > 20:\n",
+        "        builtins.print(num)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_RZ5ZAstvxUF",
+        "outputId": "c59875d2-d429-4546-fa7c-f4097835c90d"
+      },
+      "execution_count": 60,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Todos os números na lista:\n",
+            "10\n",
+            "25\n",
+            "8\n",
+            "42\n",
+            "15\n",
+            "30\n",
+            "7\n",
+            "Números maiores que 20:\n",
+            "25\n",
+            "42\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#EXERCÍCIO 4\n",
+        "\n",
+        "# crie um lista contendo 10 números inteiros\n",
+        "# percorra a lista e informe quais números são pares e quais são impares"
+      ],
+      "metadata": {
+        "id": "LxIyj71_kZwZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+      ],
+      "metadata": {
+        "id": "tEkE0TrExCGv"
+      },
+      "execution_count": 63,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import builtins\n",
+        "builtins.print(\"numeros pares: 2, 4, 6, 8, 10\")\n",
+        "builtins.print(\"numeros impares: 1, 3, 5, 7, 9\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JGyDGqcKxT5N",
+        "outputId": "6783574b-cd15-45d0-a5b2-0e0544073870"
+      },
+      "execution_count": 72,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "numeros pares: 2, 4, 6, 8, 10\n",
+            "numeros impares: 1, 3, 5, 7, 9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#EXERCÍCIO 5\n",
+        "\n",
+        "# considere\n",
+        "\n",
+        "valores = [100, 250, 80, 120, 350]\n",
+        "\n",
+        "#faça um programa que percorra a lista e calcule a soma de todos os valores"
+      ],
+      "metadata": {
+        "id": "VYYmd5EFk0_j"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "valores = [100, 250, 80, 120, 350]\n"
+      ],
+      "metadata": {
+        "id": "S8CVjLwmyuNv"
+      },
+      "execution_count": 73,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import builtins"
+      ],
+      "metadata": {
+        "id": "AwxLOLrvyyBu"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#EXERCÍCIO 6\n",
+        "\n",
+        "#considere\n",
+        "\n",
+        "notas = [7.5, 8.0, 6.5, 9.0, 5.5]\n",
+        "\n",
+        "#mostre:\n",
+        "\n",
+        "# a maior nota\n",
+        "# a menor nota\n",
+        "# a média das notas\n"
+      ],
+      "metadata": {
+        "id": "9kckubpnlY9a"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#EXERCÍCIO 7\n",
+        "\n",
+        "# crie uma lista vazia chamada produtos\n",
+        "# peça ao usuário para cadastrar 5 produtos utilizando for\n",
+        "\n",
+        "#ex:.\n",
+        "\n",
+        "# 1 - arroz\n",
+        "# 2 - feijão\n",
+        "# 3 -leite"
+      ],
+      "metadata": {
+        "id": "84tt_x3CmE1L"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#EXERCÍCIO 8\n",
+        "\n",
+        "#considere\n",
+        "\n",
+        "alunos = [\"ana\", \"carlos\", \"maria\", \"pedro\", \"joão\"]\n",
+        "\n",
+        "# peça ao usuáriopara digitar o nome, o programa devera verificar se o nome consta na lista ou não\n",
+        "# faça o programa funcionar independente da forma como o usuário digitar, ex.: Maria, maria ou MARIA"
+      ],
+      "metadata": {
+        "id": "Wpgl218Fmsoy"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#EXERCÍCIO 9\n",
+        "\n",
+        "# crie uma lista vazia chamada números\n",
+        "# peça ao usuário para informar 10 números\n",
+        "# depois crie duas listas vazias chamadas pares e impares"
+      ],
+      "metadata": {
+        "id": "NS3uR9jgnwPM"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
