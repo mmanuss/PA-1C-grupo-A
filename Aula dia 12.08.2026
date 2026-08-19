@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyO365q6OFPia75nnAUvPXzZ",
+      "authorship_tag": "ABX9TyOZSdOBEN9ES3bJMokslNdS",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -52,7 +52,7 @@
       "metadata": {
         "id": "mwQOoOz6okCd"
       },
-      "execution_count": 11,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -68,7 +68,7 @@
         "id": "IL45WOGKo5cj",
         "outputId": "8c62ac93-6afa-43a8-df33-06f5624ce440"
       },
-      "execution_count": 3,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -92,7 +92,7 @@
         "id": "YiomvogPpP37",
         "outputId": "b81b6c4a-0b42-4b5e-ac8b-d9ac8455aa94"
       },
-      "execution_count": 9,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -116,7 +116,7 @@
         "id": "Fvvg1DBwpoDW",
         "outputId": "712220e1-5bf0-41eb-bc30-71e7fdc9cb02"
       },
-      "execution_count": 10,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -140,7 +140,7 @@
         "id": "EiYbYZs0p3_t",
         "outputId": "768b1a3c-a516-45b8-96e3-d8158467c571"
       },
-      "execution_count": 12,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -169,23 +169,20 @@
     {
       "cell_type": "code",
       "source": [
-        "import builtins\n",
+        "#EXERCÍCIO 2\n",
         "\n",
-        "lista_frutas = []\n",
-        "for i in range (5):\n",
-        "   frutas = input(f\" digite 1 fruta \")\n",
-        "   lista_frutas.append(frutas)\n",
-        "\n",
-        "builtins.print(lista_frutas)"
+        "# crie uma lista vazia chama frutas\n",
+        "# utilizando append(), adicione 5 frutas informadas pelo usuário\n",
+        "# ao final exiba a lista completa"
       ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "UtmpdmmxqFNU",
-        "outputId": "c257529a-0337-4ee5-8b0f-7cf3eb1bc77c"
+        "outputId": "4e4b5867-6bbb-4d1e-ee28-04176db7009e"
       },
-      "execution_count": 39,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -193,13 +190,34 @@
           "text": [
             " digite 1 fruta maça\n",
             " digite 1 fruta banana\n",
+            " digite 1 fruta uva\n",
             " digite 1 fruta figo\n",
             " digite 1 fruta melão\n",
-            " digite 1 fruta uva\n",
-            "['maça', 'banana', 'figo', 'melão', 'uva']\n"
+            "['maça', 'banana', 'uva', 'figo', 'melão']\n"
           ]
         }
       ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# crie uma lista vazia chamada frutas\n",
+        "frutas = []\n",
+        "\n",
+        "# utilizando append(), adicione 5 frutas informadas pelo usuário\n",
+        "for i in range(5):\n",
+        "    fruta_informada = input(f\"Digite o nome da {i+1}ª fruta: \")\n",
+        "    frutas.append(fruta_informada)\n",
+        "\n",
+        "# ao final exiba a lista completa\n",
+        "print(\"\\nLista completa de frutas:\")\n",
+        "print(frutas)\n"
+      ],
+      "metadata": {
+        "id": "7w584AB9ra-0"
+      },
+      "execution_count": null,
+      "outputs": []
     },
     {
       "cell_type": "code",
@@ -214,10 +232,24 @@
         "# mostre os números maiores que 20"
       ],
       "metadata": {
-        "id": "VK0Yk6m1j1rS"
+        "id": "VK0Yk6m1j1rS",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "outputId": "eeb68344-12de-42bd-9cb9-bbb93d6fa239"
       },
       "execution_count": null,
-      "outputs": []
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax. Perhaps you forgot a comma? (1501046531.py, line 5)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_916/1501046531.py\"\u001b[0;36m, line \u001b[0;32m5\u001b[0m\n\u001b[0;31m    numeros = [10, 25, 8, 42, 15, 30 7]\u001b[0m\n\u001b[0m                                  ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax. Perhaps you forgot a comma?\n"
+          ]
+        }
+      ]
     },
     {
       "cell_type": "code",
@@ -225,9 +257,9 @@
         "numeros = [10, 25, 8, 42, 15, 30, 7]"
       ],
       "metadata": {
-        "id": "4RAQ0TGMvFeW"
+        "id": "VT-bl3F_kwu6"
       },
-      "execution_count": 58,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -243,7 +275,7 @@
         "id": "Up9eLd_Yvh0l",
         "outputId": "b6bff8c4-594b-4f4d-9ba8-d60fdb0b0b74"
       },
-      "execution_count": 59,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -275,7 +307,7 @@
         "id": "_RZ5ZAstvxUF",
         "outputId": "c59875d2-d429-4546-fa7c-f4097835c90d"
       },
-      "execution_count": 60,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -300,6 +332,17 @@
     {
       "cell_type": "code",
       "source": [
+        "#O for visita cada item sequencialmente o if filtra apenas os valores desejados."
+      ],
+      "metadata": {
+        "id": "GONJy0amsCkM"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
         "#EXERCÍCIO 4\n",
         "\n",
         "# crie um lista contendo 10 números inteiros\n",
@@ -319,7 +362,7 @@
       "metadata": {
         "id": "tEkE0TrExCGv"
       },
-      "execution_count": 63,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -334,9 +377,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "JGyDGqcKxT5N",
-        "outputId": "6783574b-cd15-45d0-a5b2-0e0544073870"
+        "outputId": "f4f448aa-0360-4867-f9ee-47a9b9714f0c"
       },
-      "execution_count": 72,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -351,13 +394,47 @@
     {
       "cell_type": "code",
       "source": [
+        "# Cria uma lista com 10 números inteiros\n",
+        "numeros = [10, 3, 5, 8, 12, 17, 22, 14, 9, 4]\n",
+        "\n",
+        "# Percorre cada número da lista\n",
+        "for num in numeros:\n",
+        "  # Se o resto da divisão por 2 for 0, é par\n",
+        "  if num % 2 == 0:\n",
+        "    print(f\"O número {num} é par.\")\n",
+        "  else:\n",
+        "    # Se não for 0, é ímpar\n",
+        "    print(f\"O número {num} é ímpar.\")\n"
+      ],
+      "metadata": {
+        "id": "s2qZYbrasYWF"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Lista: Armazena os 10 valores inteiros na variável numeros.\n",
+        "#Laço for: Passa por cada elemento da lista um por um.Condição if/else:num % 2 == 0 verifica se o número é divisível por 2.\n",
+        "#Caso seja verdadeiro, exibe que é par. Caso contrário, exibe que é ímpar."
+      ],
+      "metadata": {
+        "id": "teomwnFosZpk"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
         "#EXERCÍCIO 5\n",
         "\n",
         "# considere\n",
         "\n",
         "valores = [100, 250, 80, 120, 350]\n",
         "\n",
-        "#faça um programa que percorra a lista e calcule a soma de todos os valores"
+        "#faça um programa que percorra a lista e calcule a soma de todos os valores\n"
       ],
       "metadata": {
         "id": "VYYmd5EFk0_j"
@@ -373,19 +450,60 @@
       "metadata": {
         "id": "S8CVjLwmyuNv"
       },
-      "execution_count": 73,
+      "execution_count": 22,
       "outputs": []
     },
     {
       "cell_type": "code",
       "source": [
-        "import builtins"
+        "total = sum(numeros)\n",
+        "print(total)"
       ],
       "metadata": {
-        "id": "AwxLOLrvyyBu"
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Le2xaMxfnNLx",
+        "outputId": "9fa53ac0-ea32-4b6d-b69a-9b801322925a"
       },
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "137\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "soma = 0\n",
+        "\n",
+        "for v in numeros:\n",
+        "  soma += v\n",
+        "\n",
+        "print(soma)"
+      ],
+      "metadata": {
+        "id": "AwxLOLrvyyBu",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "396eb573-b65d-4847-fff6-ca876578f2f3"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "137\n"
+          ]
+        }
+      ]
     },
     {
       "cell_type": "code",
@@ -411,6 +529,48 @@
     {
       "cell_type": "code",
       "source": [
+        "notas = [7.5, 8.0, 6.5, 9.0, 5.5]"
+      ],
+      "metadata": {
+        "id": "PDLPmJu_nh7x"
+      },
+      "execution_count": 24,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "maior = max(notas)\n",
+        "menor = min(notas)\n",
+        "media = sum(notas) / len(notas)\n",
+        "\n",
+        "print(\"Maior nota:\", maior)\n",
+        "print(\"Menor nota:\", menor)\n",
+        "print(\"Média:\", media)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ztZshW1qnex3",
+        "outputId": "e846b670-f113-49b7-e296-bc9f6499b49a"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Maior nota: 9.0\n",
+            "Menor nota: 5.5\n",
+            "Média: 7.3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
         "#EXERCÍCIO 7\n",
         "\n",
         "# crie uma lista vazia chamada produtos\n",
@@ -424,6 +584,64 @@
       ],
       "metadata": {
         "id": "84tt_x3CmE1L"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "produtos = []\n",
+        "int(input(\"digite cinco produtos\"))\n",
+        "print(produtos)\n"
+      ],
+      "metadata": {
+        "id": "xsbejJXCnwFv"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "produtos = []\n",
+        "\n",
+        "# Peça ao usuário para cadastrar 5 produtos utilizando for\n",
+        "int(input(\"digite cinco produtos \"))\n",
+        "for i in range(1, 6):\n",
+        "    produto = input(f\"{i} - \")\n",
+        "    produtos.append(produto)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 356
+        },
+        "id": "YYLevxc8otjI",
+        "outputId": "51ada945-eb60-4479-a895-38f0e3abd3e7"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "KeyboardInterrupt",
+          "evalue": "Interrupted by user",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_6300/676931930.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;31m# Peça ao usuário para cadastrar 5 produtos utilizando for\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 4\u001b[0;31m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"digite cinco produtos \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      5\u001b[0m \u001b[0;32mfor\u001b[0m \u001b[0mi\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m6\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m     \u001b[0mproduto\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34mf\"{i} - \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36mraw_input\u001b[0;34m(self, prompt)\u001b[0m\n\u001b[1;32m   1175\u001b[0m                 \u001b[0;34m\"raw_input was called, but this frontend does not support input requests.\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1176\u001b[0m             )\n\u001b[0;32m-> 1177\u001b[0;31m         return self._input_request(\n\u001b[0m\u001b[1;32m   1178\u001b[0m             \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mprompt\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1179\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_ident\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"shell\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36m_input_request\u001b[0;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[1;32m   1217\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1218\u001b[0m                 \u001b[0;31m# re-raise KeyboardInterrupt, to truncate traceback\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1219\u001b[0;31m                 \u001b[0;32mraise\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Interrupted by user\"\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1220\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1221\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlog\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwarning\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Invalid Message:\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mexc_info\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m: Interrupted by user"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "sqCniAY_nthf"
       },
       "execution_count": null,
       "outputs": []
@@ -449,6 +667,40 @@
     {
       "cell_type": "code",
       "source": [
+        "alunos = [\"ana\", \"carlos\", \"maria\", \"pedro\", \"joão\"]\n",
+        "\n",
+        "# Pede o nome ao usuário e remove espaços extras\n",
+        "nome_usuario = input(\"Digite o nome do aluno: \").strip().lower()\n",
+        "\n",
+        "# Verifica se o nome está na lista\n",
+        "if nome_usuario in alunos:\n",
+        "  print(\"O nome consta na lista.\")\n",
+        "else:\n",
+        "  print(\"O nome não consta na lista.\")"
+      ],
+      "metadata": {
+        "id": "9WxQOVWGpQS-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#input(): Pede para o usuário digitar um texto.\n",
+        "#strip(): Remove espaços vazios antes ou depois do que o usuário digitou.\n",
+        "#lower(): Transforma todas as letras em minúsculas para comparar com a lista.\n",
+        "#in: Verifica se o valor digitado existe dentro da lista alunos."
+      ],
+      "metadata": {
+        "id": "vWpllCZcpckW"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
         "#EXERCÍCIO 9\n",
         "\n",
         "# crie uma lista vazia chamada números\n",
@@ -457,6 +709,100 @@
       ],
       "metadata": {
         "id": "NS3uR9jgnwPM"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numeros = []\n",
+        "\n",
+        "for i in range(10):\n",
+        "    n = int(input(f\"Digite o {i+1}º número: \"))\n",
+        "    numeros.append(n)\n",
+        "\n",
+        "pares = []\n",
+        "impares = []\n",
+        "\n",
+        "for n in numeros:\n",
+        "    if n % 2 == 0:\n",
+        "        pares.append(n)\n",
+        "    else:\n",
+        "        impares.append(n)\n",
+        "\n",
+        "print(\"Números:\", numeros)\n",
+        "print(\"Pares:\", pares)\n",
+        "print(\"Ímpares:\", impares)\n"
+      ],
+      "metadata": {
+        "id": "oPJ4L3q_p3pW"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#EXERCÍCIO 10\n",
+        "#faça um pequeno sistema para cadastrar as notas de 5 alunos\n",
+        "\n",
+        "#o programa deverá armazenar as notas em uma lista e depois mostrar:\n",
+        "#todas as notas\n",
+        "#a maior nota\n",
+        "#a média da turma\n",
+        "#a quantidade de alunos com nota maior ou igual a 6\n",
+        "#quantidade de alunos com a nota maior que 6"
+      ],
+      "metadata": {
+        "id": "T1RMB-fIibF1"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "notas = []\n",
+        "\n",
+        "# Cadastrar as notas de 5 alunos\n",
+        "for i in range(5):\n",
+        "    nota = float(input(f\"Digite a nota do aluno {i + 1}: \"))\n",
+        "    notas.append(nota)\n",
+        "\n",
+        "# Calcular os dados\n",
+        "maior_nota = max(notas)\n",
+        "media_turma = sum(notas) / len(notas)\n",
+        "\n",
+        "# Contar alunos com nota >= 6 e > 6\n",
+        "maior_igual_6 = sum(1 for n in notas if n >= 6)\n",
+        "maior_que_6 = sum(1 for n in notas if n > 6)\n",
+        "\n",
+        "# Mostrar os resultados\n",
+        "print(\"\\n--- Resultados ---\")\n",
+        "print(f\"Todas as notas: {notas}\")\n",
+        "print(f\"Maior nota: {maior_nota}\")\n",
+        "print(f\"Média da turma: {media_turma:.2f}\")\n",
+        "print(f\"Alunos com nota maior ou igual a 6: {maior_igual_6}\")\n",
+        "print(f\"Alunos com nota maior que 6: {maior_que_6}\")\n"
+      ],
+      "metadata": {
+        "id": "P_apJF_np_A9"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Armazenar: Usamos um laço for para pedir 5 notas e o comando .\n",
+        "#append() para colocar cada nota na lista notas.Maior nota:\n",
+        "#A função max() acha o maior valor da lista.\n",
+        "#Média: Somamos todas as notas com sum() e dividimos pelo total de alunos.\n",
+        "#Contagens: Usamos expressões para contar quantos valores atendem às regras de ser maiores ou iguais a 6 e estritamente maiores que 6."
+      ],
+      "metadata": {
+        "id": "W1ACmN6fqG5k"
       },
       "execution_count": null,
       "outputs": []
